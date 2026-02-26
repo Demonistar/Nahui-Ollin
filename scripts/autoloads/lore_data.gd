@@ -292,7 +292,7 @@ func get_god(god_id: String) -> Dictionary:
 	return GODS.get(god_id, {})
 
 
-func get_class(class_id: String) -> Dictionary:
+func get_class_data(class_id: String) -> Dictionary:
 	return CLASSES.get(class_id, {})
 
 
