@@ -73,6 +73,42 @@ var gods: Dictionary = {
 		"awareness_passive": "renewal_surge",
 		"reckoning_type": "plague",
 	},
+	"tezcatlipoca": {
+		"id": "tezcatlipoca",
+		"nahuatl_name": "Tezcatlipōca",
+		"display_name": "Tezcatlipoca",
+		"domain": "Night / Sorcery / Chaos",
+		"description": "Smoking Mirror. God of the night sky, sorcery, and conflict. Eternal rival of Quetzalcoatl. He sees all in his obsidian mirror.",
+		"portrait_color": Color(0.15, 0.05, 0.3),
+		"naming_ceremony_names": ["Titlacauan", "Moyocoyani", "Necoc Yaotl"],
+		"offering_type": "stone",
+		"awareness_passive": "shadow_sight",
+		"reckoning_type": "shadow_consume",
+	},
+	"chalchiuhtlicue": {
+		"id": "chalchiuhtlicue",
+		"nahuatl_name": "Chalchiuhtlicue",
+		"display_name": "Chalchiuhtlicue",
+		"domain": "Water / Rivers / Protection",
+		"description": "She of the Jade Skirt. Goddess of rivers, lakes, and running water. She presided over the Fourth Sun and sheltered the survivors of its flood.",
+		"portrait_color": Color(0.0, 0.7, 0.7),
+		"naming_ceremony_names": ["Acuecueyotl", "Chalchiuhtlatonal", "Ayauhcihuatl"],
+		"offering_type": "cacao",
+		"awareness_passive": "jade_ward",
+		"reckoning_type": "tidal_wave",
+	},
+	"mictlantecuhtli": {
+		"id": "mictlantecuhtli",
+		"nahuatl_name": "Mictlantēcuhtli",
+		"display_name": "Mictlantecuhtli",
+		"domain": "Death / Underworld",
+		"description": "Lord of Mictlan. God of death and ruler of the underworld. He who waits at the end of all journeys, patient and absolute.",
+		"portrait_color": Color(0.9, 0.85, 0.8),
+		"naming_ceremony_names": ["Nextepehua", "Ixpuztec", "Tzontemoc"],
+		"offering_type": "gold",
+		"awareness_passive": "death_harvest",
+		"reckoning_type": "undead_surge",
+	},
 }
 
 # --- HERO CLASSES ---
@@ -129,6 +165,9 @@ var patron_bonuses: Dictionary = {
 	"huitzilopochtli": { "attack_bonus": 5, "meat_gather_mult": 1.3 },
 	"tlaloc": { "max_hp_bonus": 15, "wood_gather_mult": 1.5 },
 	"xipe_totec": { "ingredients_gather_mult": 1.5, "heal_on_cook": 5 },
+	"tezcatlipoca": { "defense_bonus": 4, "gold_on_kill": 1, "stone_gather_mult": 1.5 },
+	"chalchiuhtlicue": { "max_hp_bonus": 20, "cacao_gather_mult": 1.5, "awareness_gain_mult": 1.1 },
+	"mictlantecuhtli": { "attack_bonus": 4, "resource_on_kill_chance": 0.25, "gold_gather_mult": 1.5 },
 }
 
 
