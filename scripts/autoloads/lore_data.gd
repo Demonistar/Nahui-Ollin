@@ -131,7 +131,7 @@ var classes: Dictionary = {
 		"display_name": "Jaguar Warrior",
 		"description": "Masters of stealth and close combat. High defense and speed.",
 		"stat_bonuses": { "attack": 2, "defense": 3, "speed": 2, "max_hp": 0 },
-		"preferred_gods": ["tlazolteotl", "itzpapalotl"],  # TODO: confirm with Lore Bible
+		"preferred_gods": ["itzpapalotl", "xipe_totec"],
 		"starting_skill": "shadow_step",
 		"color": Color(0.3, 0.2, 0.0),
 	},
