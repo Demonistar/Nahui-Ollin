@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://tilemap_mission"]
+
+[ext_resource type="Script" path="res://scripts/mission/tilemap.gd" id="1_tilemap"]
+
+[node name="TileMap" type="Node2D"]
+script = ExtResource("1_tilemap")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1, 1)
+
+[node name="TileContainer" type="Node2D" parent="."]
