@@ -8,9 +8,9 @@ extends Node
 # ============================================================
 
 
-func play_sfx(sound_key: String) -> void:
+func play_sfx(_sound_key: String) -> void:
 	pass
 
 
-func play_music(track_key: String) -> void:
+func play_music(_track_key: String) -> void:
 	pass

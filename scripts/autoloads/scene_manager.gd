@@ -8,7 +8,7 @@ extends Node
 var _current_scene: Node = null
 
 
-func go_to(scene_path: String, transition: String = 'fade') -> void:
+func go_to(scene_path: String, _transition: String = 'fade') -> void:
 	# Fade out, load new scene, fade in
 	if _current_scene:
 		_current_scene.queue_free()
