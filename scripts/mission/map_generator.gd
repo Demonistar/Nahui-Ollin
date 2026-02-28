@@ -91,8 +91,8 @@ static func _place_resource_clusters(map: Array, grid_size: int, rng: SeededRNG,
 				break
 			var ox := rng.next_int(-1, 1)
 			var oy := rng.next_int(-1, 1)
-			var tx := clamp(cx + ox, 0, grid_size - 1)
-			var ty := clamp(cy + oy, 0, grid_size - 1)
+			var tx: int = clamp(cx + ox, 0, grid_size - 1)
+			var ty: int = clamp(cy + oy, 0, grid_size - 1)
 			if map[ty][tx].resource == null:
 				map[ty][tx].resource = _pick_resource(map[ty][tx].ground, rng, wave)
 				placed += 1
