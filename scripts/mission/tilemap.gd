@@ -55,8 +55,8 @@ func _draw_cell(cell: Dictionary, x: int, y: int, tile_px: int) -> void:
 
 	if cell.resource != null:
 		var node_rect := ColorRect.new()
-		var node_size := tile_px / 2
-		var node_offset := tile_px / 4
+		var node_size := float(tile_px) / 2.0
+		var node_offset := float(tile_px) / 4.0
 		node_rect.size = Vector2(node_size, node_size)
 		node_rect.position = Vector2(x * tile_px + node_offset, y * tile_px + node_offset)
 		node_rect.color = NODE_COLORS.get(cell.resource.tier, Color(1, 1, 1))

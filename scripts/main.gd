@@ -47,12 +47,15 @@ func _ready() -> void:
 	else:
 		print("Step 2 Definition of Done: FAIL — check generator")
 
-	# Load and display tilemap scene with map A
-	var tilemap_scene = load("res://scenes/mission/tilemap.tscn")
+	# Load and display tilemap scene with map A.
+	# add_child and render are both deferred so the tilemap node enters the
+	# scene tree first (firing _ready and resolving @onready vars) before
+	# render() accesses _tile_container and _camera.
+	var tilemap_scene: PackedScene = load("res://scenes/mission/tilemap.tscn")
 	if tilemap_scene:
-		var tilemap = tilemap_scene.instantiate()
-		get_tree().root.add_child(tilemap)
-		tilemap.render(map_a)
+		var tilemap: Node = tilemap_scene.instantiate()
+		get_tree().root.call_deferred("add_child", tilemap)
+		tilemap.call_deferred("render", map_a)
 		GameState.screen = "tilemap"
 	else:
 		print("ERROR: could not load tilemap.tscn")
